@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css';
-import {Container} from '@mui/material';
+import {Container} from "@mui/material";
 
 function App() {
-    return <Container></Container>;
+  return (
+    <Container >
+
+    </Container>
+  );
 }
 
 export default App;
