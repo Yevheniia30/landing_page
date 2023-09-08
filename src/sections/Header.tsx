@@ -55,7 +55,7 @@ const Header: FC = () => {
           sx={{
             display: 'flex',
             gap: isPhone ? '20px' : '70px',
-            fontSize: '20px',
+            fontSize: isPhone ? '15px' : '20px',
             textTransform: 'uppercase',
             textDecoration: 'none',
           }}

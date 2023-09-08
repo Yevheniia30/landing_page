@@ -3,6 +3,7 @@ import './App.css';
 import {Container} from '@mui/material';
 import Main from './sections/Main';
 import Hero from './sections/Hero';
+import Footer from './sections/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Main />
         </section>
       </Container>
+      <Footer />
     </>
   );
 }
