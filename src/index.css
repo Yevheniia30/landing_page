@@ -20,6 +20,7 @@ code {
 /*border 2c303a*/
 
 html {
+  --main-bg-color: #010614;
   --primary-bg-color: #181621;
   --secondary-bg-color: #2c303a;
   --primary-text-color: #ffffff;
