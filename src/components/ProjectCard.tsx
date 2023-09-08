@@ -5,13 +5,13 @@ import {FC} from 'react';
 const ProjectCard: FC<Project> = ({title, shortDescription}) => (
     <Card
         sx={{
-            backgroundColor: '#181621',
+            backgroundColor: 'var(--primary-bg-color)',
             color: '#ffffff',
             height: '320px',
-            border: '1px solid #2c303a',
+            border: '1px solid var(--secondary-bg-color)',
             ':hover': {
-                boxShadow: '-2px -2px 10px 15px rgba(44,48,58,0.5)',
-                scale: '1.03',
+                boxShadow: 'var(--shadow-color)',
+                scale: '1.02',
                 // animation: '$mui-ripple-enter 100ms cubic-bezier(0.4, 0, 0.2, 1)',
                 animation: '$mui-ripple-enter 200ms cubic-bezier(.17,.67,.83,.67)',
             },
@@ -21,13 +21,25 @@ const ProjectCard: FC<Project> = ({title, shortDescription}) => (
             <Typography gutterBottom variant="h5" component="div">
                 {title}
             </Typography>
-            <Typography variant="body2" color="#c7c9d3">
+            <Typography variant="body2" color="var(--secondary-text-color)">
                 {shortDescription}
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Увійти</Button>
-            <Button size="small">Деталі</Button>
+            <Button
+                size="small"
+                variant="contained"
+                sx={{backgroundColor: 'var(--button-bg-color)'}}
+            >
+                Увійти
+            </Button>
+            <Button
+                size="small"
+                variant="contained"
+                sx={{backgroundColor: 'var(--button-bg-color)'}}
+            >
+                Деталі
+            </Button>
         </CardActions>
     </Card>
 );

@@ -6,7 +6,9 @@ import Main from './sections/Main';
 function App() {
     return (
         <Container maxWidth="xl">
-            <Main />
+            <section id="projects">
+                <Main />
+            </section>
         </Container>
     );
 }
