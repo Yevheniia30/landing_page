@@ -6,6 +6,7 @@ export interface Employee {
 export interface Project {
     id: number;
     title: string;
+    icon?: any;
     shortDescription: string;
     fullDescription: string;
     developers: Employee[];

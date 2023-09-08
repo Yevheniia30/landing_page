@@ -3,31 +3,33 @@ import TimelineIcon from '@mui/icons-material/Timeline';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Footer = () => {
-  const isPhone = useMediaQuery('(max-width:600px)');
+    const isPhone = useMediaQuery('(max-width:600px)');
 
-  return (
-    <footer>
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          gap: '10px',
-          width: '100%',
-          height: '200px',
-          py: '30px',
-          color: 'white',
-          backgroundColor: 'var(--main-bg-color)',
-        }}
-      >
-        <Typography variant={isPhone ? 'h5' : 'h2'}>How we work</Typography>
-        <TimelineIcon sx={{color: 'var(--accent-green-color)', width: '70px', height: '70px'}} />
-        <Box sx={{fontSize: isPhone ? '15px' : '17px'}}>
-          here are all projects and information about them
-        </Box>
-      </Box>
-    </footer>
-  );
+    return (
+        <footer>
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    gap: '10px',
+                    width: '100%',
+                    height: '200px',
+                    py: '30px',
+                    color: 'white',
+                    backgroundColor: 'var(--main-bg-color)',
+                }}
+            >
+                <Typography variant={isPhone ? 'h5' : 'h2'}>How we work</Typography>
+                <TimelineIcon
+                    sx={{color: 'var(--accent-green-color)', width: '70px', height: '70px'}}
+                />
+                <Box sx={{fontSize: isPhone ? '15px' : '17px'}}>
+                    here are all projects and information about them
+                </Box>
+            </Box>
+        </footer>
+    );
 };
 export default Footer;
