@@ -3,16 +3,15 @@ import {Project} from '../types/types';
 import {FC} from 'react';
 import ShowFullInfoInDialogButton from './ShowFullInfoInDialogButton';
 
-const ProjectCard: FC<Project> = ({title, shortDescription, icon: Component}) => {
+const ProjectCard: FC<Project> = (props) => {
+    const {title, shortDescription, icon: Component} = props;
     return (
         <Card
             sx={{
                 paddingX: '10px',
                 paddingY: '15px',
-                // backgroundColor: 'var(--primary-bg-color)',
-                // background: 'rgba(80,81,94,0.3)',
-                background: 'radial-gradient(circle, rgba(80,81,94,0.3) 0%, rgba(10,9,13,0.8) 90%)',
-                // background: 'radial-gradient(circle, rgba(99,99,102,1) 0%, rgba(35,35,80,1) 100%)',
+                // background: 'radial-gradient(circle, rgba(80,81,94,0.3) 0%, rgba(10,9,13,0.8) 90%)',
+                background: 'var(--black-navy)',
                 // background: 'radial-gradient(circle, rgba(99,99,102,1) 0%, rgba(23,23,32,1) 100%)',
                 height: '320px',
                 // border: '1px solid var(--secondary-bg-color)',
@@ -53,17 +52,18 @@ const ProjectCard: FC<Project> = ({title, shortDescription, icon: Component}) =>
                     size="small"
                     variant="contained"
                     sx={{
-                        background: 'var(--accent-violet-gradient)',
+                        background: 'var(--accent-green-gradient)',
                         color: 'var(--primary-text-color)',
                     }}
                 >
-                    Увійти
+                    Перейти
                 </Button>
                 <ShowFullInfoInDialogButton
                     sx={{
-                        background: 'var(--accent-violet-gradient)',
+                        background: 'var(--accent-blue-gradient)',
                         color: 'var(--primary-text-color)',
                     }}
+                    {...props}
                 />
             </CardActions>
         </Card>

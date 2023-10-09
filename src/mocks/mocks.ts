@@ -28,7 +28,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -52,7 +52,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -76,7 +76,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -100,7 +100,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -124,7 +124,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -149,7 +149,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -173,7 +173,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -197,7 +197,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -221,7 +221,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -245,7 +245,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -269,7 +269,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -293,7 +293,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -317,7 +317,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -341,7 +341,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -365,7 +365,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -389,7 +389,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -413,7 +413,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
     {
@@ -437,7 +437,7 @@ export const projectsListData = [
         gitlabLink: 'https://gitlab.com/',
         swaggerLink: 'https://swagger.io/',
         pageLink: 'https://www.google.com/',
-        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2]'],
+        technologies: ['React 18.2.0', 'React-admin 4.13.2', 'JavaScript 1.8.2'],
         releaseDate: '2023-09-07',
     },
 ];

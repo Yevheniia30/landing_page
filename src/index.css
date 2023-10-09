@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #181621;
+  /*background-color: #181621;*/
+  background-color: #1C212B;
 }
 
 code {
@@ -13,19 +14,13 @@ code {
     monospace;
 }
 
-/*green accent 10EA18*/
-/*sec text color F5F5F5*/
-/*primary text white #ffffff*/
-/*gray 444857*/
-/*border 2c303a*/
-
 html {
   /*--main-bg-color: #010614;*/
   --main-bg-color: rgba(10,9,13,0.8);
   --primary-bg-color: #181621;
   --secondary-bg-color: #2c303a;
   --primary-text-color: #f2f2f4;
-  /*--secondary-text-color: #c7c9d3;*/
+  --secondary-bg2-color: rgba(54, 57, 55, 0.54);
   --secondary-text-color: #afafc7;
   --accent-green-color: #10EA18;
   --button-bg-color: #444857;
@@ -37,6 +32,28 @@ html {
   --accent-violet-color: rgba(100,21,180,1);
   --accent-violet-gradient: radial-gradient(circle, rgba(93,42,164,1) 0%, rgba(34,23,52,0.8) 150%);
   --accent-violet2-gradient: radial-gradient(circle, rgba(100,21,180,1) 0%, rgba(56,13,99,0.8) 100%);
-  --accent-green-gradient: radial-gradient(circle, rgba(98,218,10,1) 0%, rgba(25,87,4,0.8) 110%);
+  --accent-green-gradient: radial-gradient(circle, var(--mint-green) 0%, var(--green) 110%);
   --accent-green2-gradient: radial-gradient(ellipse, rgba(17,229,179,1) 0%, rgba(9,107,84,1) 100%);
+  --accent-blue-gradient: radial-gradient(circle, var(--blue) 0%, var(--bg-dark) 110%);
+
+
+/*  colors green palette*/
+  --dark-green: #0D2027;
+  --black-navy: #0F212B;
+  --shadow-green: #1D3533;
+  --light-green: #4C8754;
+  --grey-green: #5A7D65;
+
+  /*  colors blue-green palette*/
+  --black-navy: #141823;
+  --mint-green: #12D599;
+  --green: #12985F;
+  --bg-dark: #1C212B;
+  --blue: #3C4392;
+  --violet: #4A269A;
 }
+
+
+
+
+
