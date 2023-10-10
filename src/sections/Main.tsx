@@ -69,7 +69,7 @@ const Main = () => {
                 columns={{xs: 4, sm: 8, md: 12}}
             >
                 {projectsList.map((el) => (
-                    <Grid item xs={2} sm={4} md={4} key={el.id}>
+                    <Grid item xs={4} sm={4} md={4} key={el.id}>
                         <ProjectCard {...el} />
                     </Grid>
                 ))}

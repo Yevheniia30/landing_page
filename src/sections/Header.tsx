@@ -14,7 +14,7 @@ const HeaderLink: FC<HeaderLinkProps> = ({text}) => (
             color: 'white',
             cursor: 'pointer',
             transition: 'color 0.3s ease-in-out',
-            '&:hover': {color: 'var(--accent-green-color)'},
+            '&:hover': {color: 'var(--mint-green)'},
         }}
     >
         {text}
@@ -40,10 +40,10 @@ const Header: FC = () => {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        color: 'var(--accent-green-color)',
+                        color: 'var(--mint-green)',
                         fontSize: '25px',
                         textTransform: 'uppercase',
-                        border: `4px solid ${'var(--accent-green-color)'}`,
+                        border: `4px solid ${'var(--mint-green)'}`,
                         width: '80px',
                         height: '80px',
                         borderRadius: '50%',

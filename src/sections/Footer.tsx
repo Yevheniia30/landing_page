@@ -17,14 +17,12 @@ const Footer = () => {
                     width: '100%',
                     height: '200px',
                     py: '30px',
-                    color: 'white',
-                    backgroundColor: 'var(--main-bg-color)',
+                    color: 'var(--primary-text-color)',
+                    backgroundColor: 'var(--black-navy)',
                 }}
             >
                 <Typography variant={isPhone ? 'h5' : 'h2'}>How we work</Typography>
-                <TimelineIcon
-                    sx={{color: 'var(--accent-green-color)', width: '70px', height: '70px'}}
-                />
+                <TimelineIcon sx={{color: 'var(--mint-green)', width: '70px', height: '70px'}} />
                 <Box sx={{fontSize: isPhone ? '15px' : '17px'}}>
                     here are all projects and information about them
                 </Box>

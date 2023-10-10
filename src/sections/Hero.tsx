@@ -6,7 +6,7 @@ const Hero = () => {
     const isPhone = useMediaQuery('(max-width:600px)');
 
     return (
-        <Box sx={{height: '100vh', backgroundColor: 'var(--main-bg-color)'}}>
+        <Box sx={{height: '100vh', backgroundColor: 'var(--black-navy)'}}>
             <Header />
             <Box
                 sx={{
@@ -16,7 +16,7 @@ const Hero = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                     gap: '30px',
-                    color: 'white',
+                    color: 'var(--primary-text-color)',
                     textTransform: 'uppercase',
                 }}
             >
@@ -24,7 +24,7 @@ const Hero = () => {
                 <Box
                     sx={{
                         fontSize: isPhone ? '40px' : '60px',
-                        color: 'white',
+                        color: 'var(--primary-text-color)',
                     }}
                 >
                     we are odb
@@ -33,24 +33,48 @@ const Hero = () => {
                     here are all projects and information about them
                 </Box>
                 <Link
+                    className="btn"
                     href="#projects"
                     sx={{
                         display: 'flex',
                         justifyContent: 'center',
-                        alignItems: 'center',
-                        textDecoration: 'none',
-                        p: '15px',
-                        borderRadius: '15px',
                         mt: '20px',
-                        backgroundColor: 'var(--main-bg-color)',
-                        color: 'var(--accent-green-color)',
-                        border: `1px solid ${'var(--accent-green-color)'}`,
-                        width: '150px',
+                        paddingY: '16px',
+                        width: '180px',
+                        textDecoration: 'none',
                         fontSize: '16px',
                         fontWeight: 'bold',
-                        transition: 'all 0.6s ease-in-out',
-                        '&:hover': {
-                            backgroundColor: 'white',
+                        borderRadius: '40px',
+                        // text gradient properties
+                        background: 'var(--nude-gradient)',
+                        WebkitBackgroundClip: 'text',
+                        backgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        color: 'transparent',
+                        position: 'relative',
+                        zIndex: 0,
+                        // border gradient properties
+                        '&::before': {
+                            content: '""',
+                            position: 'absolute',
+                            zIndex: -1,
+                            inset: 0,
+                            border: '2px solid transparent',
+                            borderRadius: '40px',
+                            background: 'var(--nude-gradient)',
+                            backgroundOrigin: 'border-box',
+                            backgroundClip: 'border-box',
+                            WebkitMask:
+                                'linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)',
+                            webkitMaskComposite: 'xor',
+                            maskComposite: 'exclude',
+                            WebkitMaskRepeat: 'no-repeat',
+                        },
+                        ':hover': {
+                            color: 'var(--black-navy)',
+                            WebkitTextFillColor: 'var(--black-navy)',
+                            WebkitBackgroundClip: 'border-box',
+                            backgroundClip: 'border-box',
                         },
                     }}
                 >

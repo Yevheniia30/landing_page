@@ -9,7 +9,7 @@ import {
 export const projectsListData = [
     {
         id: 1,
-        title: 'Share your work',
+        title: 'Cash (RKO)',
         icon: Money,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -33,7 +33,7 @@ export const projectsListData = [
     },
     {
         id: 2,
-        title: 'Share your work',
+        title: 'CFS',
         icon: AccountBalance,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -57,7 +57,7 @@ export const projectsListData = [
     },
     {
         id: 3,
-        title: 'Share your work',
+        title: 'Checks',
         icon: CurrencyBitcoin,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -81,7 +81,7 @@ export const projectsListData = [
     },
     {
         id: 4,
-        title: 'Share your work',
+        title: 'Cash BO',
         icon: CurrencyExchange,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -105,7 +105,7 @@ export const projectsListData = [
     },
     {
         id: 5,
-        title: 'Share your work',
+        title: 'Deposits',
         icon: Save,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -129,8 +129,7 @@ export const projectsListData = [
     },
     {
         id: 6,
-
-        title: 'Share your work',
+        title: 'Doc Credit',
         icon: Apartment,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -154,7 +153,7 @@ export const projectsListData = [
     },
     {
         id: 7,
-        title: 'Share your work',
+        title: 'Encashment',
         icon: CurrencyBitcoin,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -178,7 +177,7 @@ export const projectsListData = [
     },
     {
         id: 8,
-        title: 'Share your work',
+        title: 'FEA',
         icon: Apartment,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -202,7 +201,7 @@ export const projectsListData = [
     },
     {
         id: 9,
-        title: 'Share your work',
+        title: 'IDS',
         icon: CurrencyExchange,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -226,7 +225,7 @@ export const projectsListData = [
     },
     {
         id: 10,
-        title: 'Share your work',
+        title: 'Loans',
         icon: AccountBalance,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -250,7 +249,7 @@ export const projectsListData = [
     },
     {
         id: 11,
-        title: 'Share your work',
+        title: 'Regular charges',
         icon: Money,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -274,7 +273,7 @@ export const projectsListData = [
     },
     {
         id: 12,
-        title: 'Share your work',
+        title: 'Rent',
         icon: CurrencyExchange,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -298,7 +297,7 @@ export const projectsListData = [
     },
     {
         id: 13,
-        title: 'Share your work',
+        title: 'Safe Cells',
         icon: CurrencyBitcoin,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -322,7 +321,7 @@ export const projectsListData = [
     },
     {
         id: 14,
-        title: 'Share your work',
+        title: 'SEP-EXT',
         icon: CurrencyBitcoin,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -346,7 +345,7 @@ export const projectsListData = [
     },
     {
         id: 15,
-        title: 'Share your work',
+        title: 'SEP-INT',
         icon: AccountBalance,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -370,7 +369,7 @@ export const projectsListData = [
     },
     {
         id: 16,
-        title: 'Share your work',
+        title: 'SWIFT',
         icon: Money,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -394,7 +393,7 @@ export const projectsListData = [
     },
     {
         id: 17,
-        title: 'Share your work',
+        title: 'Tax Invs',
         icon: Apartment,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -418,7 +417,7 @@ export const projectsListData = [
     },
     {
         id: 18,
-        title: 'Share your work',
+        title: 'Inc Cor',
         icon: Save,
         shortDescription:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',

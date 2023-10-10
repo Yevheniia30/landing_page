@@ -24,7 +24,6 @@ import {Close, Label} from '@mui/icons-material';
 import {FC, useEffect, useState, ReactElement, cloneElement, forwardRef, Ref} from 'react';
 import {Project} from '../types/types';
 import {TransitionProps} from '@mui/material/transitions';
-import {styled, keyframes} from '@mui/material/styles';
 
 interface ShowFullInfoInDialogButtonProps extends Project {
     sx: SxProps;
@@ -38,15 +37,6 @@ const Transition = forwardRef(function Transition(
 ) {
     return <Grow ref={ref} {...props} />;
 });
-
-const stripes = keyframes`
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 100%;
-  }
-`;
 
 const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) => {
     const {
@@ -62,19 +52,9 @@ const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) 
         technologies,
     } = props;
 
-    function generate(element: ReactElement) {
-        return developers.map((value) =>
-            cloneElement(element, {
-                key: value.login,
-            }),
-        );
-    }
-
     const [open, setOpen] = useState(false);
 
     const handleToggle = () => setOpen((prevState) => !prevState);
-
-    // class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthMd MuiDialog-paperFullWidth css-rnmm7m-MuiPaper-root-MuiDialog-paper"
 
     return (
         <>
@@ -88,13 +68,23 @@ const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) 
                 maxWidth="md"
                 fullWidth
                 sx={{
+                    backgroundColor: 'rgba(28, 33, 43, 0.7)',
                     '& .MuiPaper-root': {
-                        backgroundColor: 'var(--secondary-bg-color)',
-                        border: '1px solid var(--button-bg-color)',
+                        backgroundColor: 'var(--black-navy)',
+                        color: 'var(--primary-text-color)',
+                        boxShadow:
+                            'rgba(44,48,58, 0.9) 0px 10px 25px, rgba(44,48,58, 1) 0px -10px 25px, rgba(253, 209, 189, 0.9) 0px 4px 10px, rgba(44,48,58, 0.3) 0px 12px 13px, rgba(253, 209, 189, 0.9) 0px -3px 6px',
+
+                        // 'rgba(44,48,58, 0.9) 0px 10px 25px, rgba(44,48,58, 0.9) 0px -10px 25px, rgba(18, 152, 95, 0.5) 0px 4px 6px, rgba(44,48,58, 0.3) 0px 12px 13px, rgba(18, 152, 95, 0.5) 0px -3px 5px',
                     },
                 }}
             >
-                <DialogTitle color="var(--primary-text-color)">{title}</DialogTitle>
+                <DialogTitle
+                    color="var(--mint-green)"
+                    sx={{fontSize: 24, fontWeight: 'bold', textTransform: 'uppercase'}}
+                >
+                    {title}
+                </DialogTitle>
                 <IconButton
                     aria-label="close"
                     onClick={handleToggle}
@@ -102,24 +92,35 @@ const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) 
                         position: 'absolute',
                         right: 8,
                         top: 8,
-                        color: 'var(--primary-text-color)',
+                        color: 'var(--secondary-text-color)',
                     }}
                 >
                     <Close />
                 </IconButton>
                 <DialogContent dividers>
-                    <Typography sx={{lineHeight: 2, p: 0}}>Опис:</Typography>
+                    <Typography sx={{lineHeight: 2, p: 0, color: 'var(--secondary-text-color)'}}>
+                        Опис:
+                    </Typography>
                     <Typography variant="inherit" component="p">
                         {fullDescription}
                     </Typography>
-                    <Typography sx={{lineHeight: 2, p: 0, marginTop: 2}}>Розробники:</Typography>
+                    <Typography
+                        sx={{
+                            lineHeight: 2,
+                            p: 0,
+                            marginTop: 2,
+                            color: 'var(--secondary-text-color)',
+                        }}
+                    >
+                        Розробники:
+                    </Typography>
                     {developers.map((item) => (
                         <Typography key={item.login}>
                             {item.fullname}
                             <Typography
                                 component="span"
                                 variant="subtitle2"
-                                color="text.secondary"
+                                color="var(--secondary-text-color)"
                                 sx={{marginLeft: 1}}
                             >
                                 {item.login}
@@ -135,7 +136,14 @@ const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) 
                             </Link>
                         </Typography>
                     ))}
-                    <Typography sx={{lineHeight: 2, p: 0, marginTop: 2}}>
+                    <Typography
+                        sx={{
+                            lineHeight: 2,
+                            p: 0,
+                            marginTop: 2,
+                            color: 'var(--secondary-text-color)',
+                        }}
+                    >
                         Бізнес-аналітики:
                     </Typography>
                     {businessAnalytics.map((item) => (
@@ -144,7 +152,7 @@ const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) 
                             <Typography
                                 component="span"
                                 variant="subtitle2"
-                                color="text.secondary"
+                                color="var(--secondary-text-color)"
                                 sx={{marginLeft: 1}}
                             >
                                 {item.login}
@@ -159,7 +167,14 @@ const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) 
                             </Link>
                         </Typography>
                     ))}
-                    <Typography sx={{lineHeight: 2, p: 0, marginTop: 2}}>
+                    <Typography
+                        sx={{
+                            lineHeight: 2,
+                            p: 0,
+                            marginTop: 2,
+                            color: 'var(--secondary-text-color)',
+                        }}
+                    >
                         Документація проєкта:
                     </Typography>
                     <Box sx={{display: 'flex', flexDirection: 'column', marginBottom: 2}}>
@@ -169,7 +184,7 @@ const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) 
                                 href={gitlabLink}
                                 target="_blank"
                                 underline="hover"
-                                sx={{marginLeft: 1}}
+                                sx={{marginLeft: 1, color: 'var(--mint-green)'}}
                             >
                                 {gitlabLink}
                             </Link>
@@ -180,7 +195,7 @@ const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) 
                                 href={swaggerLink}
                                 target="_blank"
                                 underline="hover"
-                                sx={{marginLeft: 1}}
+                                sx={{marginLeft: 1, color: 'var(--mint-green)'}}
                             >
                                 {swaggerLink}
                             </Link>
@@ -191,13 +206,21 @@ const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) 
                                 href={pageLink}
                                 target="_blank"
                                 underline="hover"
-                                sx={{marginLeft: 1}}
+                                sx={{marginLeft: 1, color: 'var(--mint-green)'}}
                             >
                                 {pageLink}
                             </Link>
                         </Typography>
                     </Box>
-                    <Typography component="span" sx={{lineHeight: 2, p: 0, marginRight: 1}}>
+                    <Typography
+                        component="span"
+                        sx={{
+                            lineHeight: 2,
+                            p: 0,
+                            marginRight: 1,
+                            color: 'var(--secondary-text-color)',
+                        }}
+                    >
                         Технології:
                     </Typography>
                     {technologies.map((item) => (
