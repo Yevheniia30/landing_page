@@ -1,9 +1,18 @@
+import {useEffect} from 'react';
 import {Box, Link} from '@mui/material';
 import Header from './Header';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import {scrollToSection} from '../utils';
 
 const Hero = () => {
     const isPhone = useMediaQuery('(max-width:600px)');
+
+    useEffect(() => {
+        const url = window.location.href.split('/');
+        const target = url[url.length - 1].toLowerCase();
+        const element = document.getElementById(target);
+        element && element.scrollIntoView({behavior: 'smooth', block: 'start'});
+    }, []);
 
     return (
         <Box sx={{height: '100vh', backgroundColor: 'var(--black-navy)'}}>
@@ -35,6 +44,7 @@ const Hero = () => {
                 <Link
                     className="btn"
                     href="#projects"
+                    onClick={(e) => scrollToSection(e, 'projects')}
                     sx={{
                         display: 'flex',
                         justifyContent: 'center',

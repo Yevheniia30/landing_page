@@ -58,7 +58,7 @@ const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) 
 
     return (
         <>
-            <Button size="small" sx={sx} onClick={handleToggle}>
+            <Button size="small" sx={sx} onClick={handleToggle} className="btn">
                 Деталі
             </Button>
             <Dialog
@@ -73,9 +73,7 @@ const ShowFullInfoInDialogButton: FC<ShowFullInfoInDialogButtonProps> = (props) 
                         backgroundColor: 'var(--black-navy)',
                         color: 'var(--primary-text-color)',
                         boxShadow:
-                            'rgba(44,48,58, 0.9) 0px 10px 25px, rgba(44,48,58, 1) 0px -10px 25px, rgba(253, 209, 189, 0.9) 0px 4px 10px, rgba(44,48,58, 0.3) 0px 12px 13px, rgba(253, 209, 189, 0.9) 0px -3px 6px',
-
-                        // 'rgba(44,48,58, 0.9) 0px 10px 25px, rgba(44,48,58, 0.9) 0px -10px 25px, rgba(18, 152, 95, 0.5) 0px 4px 6px, rgba(44,48,58, 0.3) 0px 12px 13px, rgba(18, 152, 95, 0.5) 0px -3px 5px',
+                            'rgba(44,48,58, 0.3) 0px 5px 10px, rgba(44,48,58, 0.5) 0px -5px 10px, rgba(253, 209, 189, 0.1) 0px 3px 10px, rgba(44,48,58, 0.1) 0px 3px 6px, rgba(253, 209, 189, 0.1) 0px -3px 6px',
                     },
                 }}
             >

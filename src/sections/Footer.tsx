@@ -6,7 +6,7 @@ const Footer = () => {
     const isPhone = useMediaQuery('(max-width:600px)');
 
     return (
-        <footer>
+        <footer id="about">
             <Box
                 sx={{
                     display: 'flex',

@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import {Box, Link} from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import {scrollToSection} from '../utils';
 
 interface HeaderLinkProps {
     text: string;
@@ -9,6 +10,7 @@ interface HeaderLinkProps {
 const HeaderLink: FC<HeaderLinkProps> = ({text}) => (
     <Link
         href={`#${text}`}
+        onClick={(e) => scrollToSection(e, text)}
         sx={{
             textDecoration: 'none',
             color: 'white',
