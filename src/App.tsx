@@ -1,38 +1,24 @@
-import React, {useEffect, useState} from 'react';
-import './App.css';
 import {Container} from '@mui/material';
+import Header from './sections/Header';
 import Main from './sections/Main';
 import Hero from './sections/Hero';
 import Footer from './sections/Footer';
 import ScrollToTopButton from './components/ScrollToTopButton';
 
-function App() {
-    const [showScrollToTopButton, setShowScrollToTopButton] = useState(false);
-    useEffect(() => {
-        document.addEventListener('scroll', scrollHandler);
-        return () => {
-            document.removeEventListener('scroll', scrollHandler);
-        };
-    }, []);
-
-    const scrollHandler = (e: any) => {
-        window.innerHeight - e.target.documentElement.scrollTop < 100
-            ? setShowScrollToTopButton(true)
-            : setShowScrollToTopButton(false);
-    };
-
-    return (
-        <>
-            {showScrollToTopButton && <ScrollToTopButton />}
+const App = () => (
+    <>
+        <Header />
+        <section id="home">
             <Hero />
-            <Container maxWidth="xl">
-                <section id="projects">
-                    <Main />
-                </section>
-            </Container>
-            <Footer />
-        </>
-    );
-}
+        </section>
+        <Container maxWidth="xl">
+            <section id="projects">
+                <Main />
+            </section>
+        </Container>
+        <Footer />
+        <ScrollToTopButton />
+    </>
+);
 
 export default App;

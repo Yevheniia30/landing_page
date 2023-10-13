@@ -18,7 +18,7 @@ const Footer = () => {
                     height: '200px',
                     py: '30px',
                     color: 'var(--primary-text-color)',
-                    backgroundColor: 'var(--black-navy)',
+                    backgroundColor: 'var(--primary-bg-color)',
                 }}
             >
                 <Typography variant={isPhone ? 'h5' : 'h2'}>How we work</Typography>

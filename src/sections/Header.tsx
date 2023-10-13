@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import {Box, Link} from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {scrollToSection} from '../utils';
@@ -35,6 +35,7 @@ const Header: FC = () => {
                     alignItems: 'center',
                     px: '30px',
                     pt: '10px',
+                    backgroundColor: 'var(--primary-bg-color)',
                 }}
             >
                 <Box

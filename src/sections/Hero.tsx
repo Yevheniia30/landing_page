@@ -1,6 +1,5 @@
 import {useEffect} from 'react';
 import {Box, Link} from '@mui/material';
-import Header from './Header';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {scrollToSection} from '../utils';
 
@@ -15,11 +14,10 @@ const Hero = () => {
     }, []);
 
     return (
-        <Box sx={{height: '100vh', backgroundColor: 'var(--black-navy)'}}>
-            <Header />
+        <Box sx={{height: '100vh', backgroundColor: 'var(--primary-bg-color)'}}>
             <Box
                 sx={{
-                    mt: '250px',
+                    pt: '250px',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -56,7 +54,7 @@ const Hero = () => {
                         fontWeight: 'bold',
                         borderRadius: '40px',
                         // text gradient properties
-                        background: 'var(--nude-gradient)',
+                        background: 'var(--button-gradient)',
                         WebkitBackgroundClip: 'text',
                         backgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
@@ -71,7 +69,7 @@ const Hero = () => {
                             inset: 0,
                             border: '2px solid transparent',
                             borderRadius: '40px',
-                            background: 'var(--nude-gradient)',
+                            background: 'var(--button-gradient)',
                             backgroundOrigin: 'border-box',
                             backgroundClip: 'border-box',
                             WebkitMask:
@@ -81,8 +79,8 @@ const Hero = () => {
                             WebkitMaskRepeat: 'no-repeat',
                         },
                         ':hover': {
-                            color: 'var(--black-navy)',
-                            WebkitTextFillColor: 'var(--black-navy)',
+                            color: 'var(--primary-bg-color)',
+                            WebkitTextFillColor: 'var(--primary-bg-color)',
                             WebkitBackgroundClip: 'border-box',
                             backgroundClip: 'border-box',
                         },

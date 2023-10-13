@@ -15,5 +15,4 @@ export interface Project {
     swaggerLink: string;
     pageLink: string;
     technologies: string[];
-    releaseDate: string;
 }

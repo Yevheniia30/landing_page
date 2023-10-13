@@ -1,11 +1,11 @@
 import {Box, Grid} from '@mui/material';
 import {useEffect, useState} from 'react';
 import {projectsListData} from '../mocks/mocks';
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../components/ProjectCard/ProjectCard';
 import {Project} from '../types/types';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import Papa from 'papaparse';
+// import Papa from 'papaparse';
 
 const Main = () => {
     const [projectsList, setProjectsList] = useState<Project[]>([]);
@@ -56,9 +56,6 @@ const Main = () => {
     //         },
     //     );
     // }, []);
-
-    console.log('projectsList', projectsList);
-    // console.log('data', data);
 
     return (
         <Box sx={{flexGrow: 1, paddingY: 7}}>
