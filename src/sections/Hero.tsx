@@ -2,6 +2,8 @@ import {useEffect} from 'react';
 import {Box, Link} from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {scrollToSection} from '../utils';
+import bgImage from '../images/background.png';
+import bgImage2 from '../images/bg.jpg';
 
 const Hero = () => {
     const isPhone = useMediaQuery('(max-width:600px)');
@@ -14,7 +16,13 @@ const Hero = () => {
     }, []);
 
     return (
-        <Box sx={{height: '100vh', backgroundColor: 'var(--primary-bg-color)'}}>
+        <Box
+            sx={{
+                height: '100vh',
+
+                // backgroundColor: 'var(--primary-bg-color)',
+            }}
+        >
             <Box
                 sx={{
                     pt: '250px',
@@ -23,7 +31,7 @@ const Hero = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                     gap: '30px',
-                    color: 'var(--primary-text-color)',
+                    color: 'var(--mint-green)',
                     textTransform: 'uppercase',
                 }}
             >
@@ -31,12 +39,18 @@ const Hero = () => {
                 <Box
                     sx={{
                         fontSize: isPhone ? '40px' : '60px',
-                        color: 'var(--primary-text-color)',
+                        color: 'var(--mint-green)',
                     }}
                 >
                     we are odb
                 </Box>
-                <Box sx={{fontSize: isPhone ? '15px' : '17px', textTransform: 'none'}}>
+                <Box
+                    sx={{
+                        fontSize: isPhone ? '15px' : '17px',
+                        textTransform: 'none',
+                        color: 'var(--primary-text-color)',
+                    }}
+                >
                     here are all projects and information about them
                 </Box>
                 <Link

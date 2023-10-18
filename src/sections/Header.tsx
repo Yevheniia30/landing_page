@@ -35,7 +35,7 @@ const Header: FC = () => {
                     alignItems: 'center',
                     px: '30px',
                     pt: '10px',
-                    backgroundColor: 'var(--primary-bg-color)',
+                    // backgroundColor: 'var(--primary-bg-color)',
                 }}
             >
                 <Box
@@ -46,7 +46,7 @@ const Header: FC = () => {
                         color: 'var(--mint-green)',
                         fontSize: '25px',
                         textTransform: 'uppercase',
-                        border: `4px solid ${'var(--mint-green)'}`,
+                        border: `4px solid var(--mint-green)`,
                         width: '80px',
                         height: '80px',
                         borderRadius: '50%',
